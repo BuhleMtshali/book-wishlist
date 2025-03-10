@@ -1,0 +1,48 @@
+/* Responsiveness */
+/* 2xl */
+@media (max-width: 1536px) {
+}
+
+/* xl */
+@media (max-width: 1280px) {
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    
+}
+
+/* md */
+@media (max-width: 768px) {
+  
+}
+
+/* sm */
+@media (max-width: 640px) {
+
+
+    
+}
+
+/* xs */
+@media (max-width: 475px) {
+    header{
+        height: auto;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hide{
+        display: none;
+    }
+
+    #responsive-bars{
+        display: block;
+    }
+
+    .middle-logo{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -43,6 +43,9 @@ input::-webkit-search-cancel-button {
 }
 
 header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
     height: 100px;
     width: 100%;
     max-width: 100%;
@@ -104,4 +107,16 @@ nav{
 .active-logo{
     color: var(--light-bg) !important;
     font-weight: 700 !important;
+}
+
+#responsive-bars{
+    font-size: 2.3rem;
+    color: var(--dark-text-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+
+#responsive-bars:hover{
+    color: var(--light-bg);
 }
