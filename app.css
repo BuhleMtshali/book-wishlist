@@ -56,7 +56,7 @@ header{
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-right: 20px;
 }
@@ -104,6 +104,8 @@ nav{
     padding-right: 5px;
 }
 
+
+
 .active-logo{
     color: var(--light-bg) !important;
     font-weight: 700 !important;
@@ -119,4 +121,39 @@ nav{
 
 #responsive-bars:hover{
     color: var(--light-bg);
+}
+
+main{
+    margin-top: 180px;
+    padding: 20px;
+}
+
+.top-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-main h1{
+    color: var(--dark-text-color);
+    font-size: 3rem;
+}
+
+.top-main button{
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 22px;
+    border: none;
+    background-color: var(--dark-text-color);
+    color: var(--dark-bg);
+    font-weight: 700;
+    cursor: pointer;
+    transition:  all 0.3s ease-in-out;
+}
+
+.top-main button:hover{
+    background-color: var(--dark-bg);
+    border: 2px solid var(--dark-text-color);
+    color: var(--dark-text-color);
 }

@@ -31,18 +31,22 @@
     }
     nav{
         display: flex;
-        justify-content: space-between;
-    }
-    .hide{
-        display: none;
-    }
-
-    #responsive-bars{
-        display: block;
-    }
-
-    .middle-logo{
-        display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
+    .middle-logo{
+        font-display: none;
+    }
+    .middle-logo.responsive{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* #responsive-bars.responsive{
+        display: flex;
+       position: absolute;
+        right: 60px;
+        top: 50px;
+    } */
+
 }
