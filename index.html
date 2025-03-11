@@ -39,6 +39,46 @@
                 <h1>Your Books</h1>
                 <button class="add-book" id="add-book"><i class="fa-solid fa-plus"></i> Add Book</button>
             </div>
+                <div class="modal">
+                    <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="modal-heading">
+                    <h2>Add New Book</h2>
+                    <div class="modal-img">
+                    <img src="assets/imgs/modal-img.png" alt="modal image">
+                    </div>
+                    </div>
+                    <div class="label-input">
+                        <label for="title">Book Title <small>(required)</small></label>
+                        <input type="text" name="title" id="title" placeholder="Enter book title">
+                    </div>
+                    <!-- end of label-input 1 -->
+                    <div class="label-input">
+                        <label for="author">Author <small>(required)</small></label>
+                        <input type="text" name="author" id="author" placeholder="Enter author name">
+                    </div>
+                    <!-- end of label-input 2 -->
+                    <div class="label-input">
+                        <label for="year">Year <small>(required)</small></label>
+                        <input type="number" name="year" id="year" placeholder="Publication year">
+                    </div>
+                    <!-- end of label-input 3 -->
+                    <div class="label-input">
+                        <label for="description">Year <small>(Optional)</small></label>
+                       <textarea name="description" id="description" placeholder="Book description"></textarea>
+                    </div>
+                    <!-- end of label-input 4 -->
+                    <div class="label-input">
+                        <label for="cover-img">Cover Image URL <small>(Optional)</small></label>
+                        <input type="url" id="cover-img" placeholder="https://img_images/">
+                    </div>
+                    <!-- end of label-input 5 -->
+                     <div class="buttons label-input">
+                        <button id="cancel-btn" class="cancel-btn">Cancel</button>
+                        <button id="submit-btn" class="submit-btn">Submit</button>
+                     </div>
+                     <!-- end of button -->
+                </div>
+                <div class="overlay"></div>
         </main>
         <!-- end of main -->
         <footer></footer>

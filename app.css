@@ -157,3 +157,117 @@ main{
     border: 2px solid var(--dark-text-color);
     color: var(--dark-text-color);
 }
+
+/* modal styles */
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    background-color: var(--dark-text-color);
+    padding: 3rem;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+}
+
+.close-modal{
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: var(--dark-bg);
+    color: var(--light-bg);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.close-modal:hover{
+    background-color: var(--light-bg);
+    color: var(--dark-text-color);
+    border: 1px solid var(--dark-text-color);
+}
+
+.modal h2{
+    font-size: 2.5rem;
+}
+
+.label-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 0;
+}
+
+.label-input input{
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 20px;
+    border: 2px solid var(--dark-bg);
+}
+
+.label-input label{
+    padding: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.modal-heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-img{
+    width: 70px;
+    height: 70px;
+}
+
+.modal-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    height: 150px;
+    border: 2px solid var(--dark-bg);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons:nth-child(1){
+    width: 90px;
+}
