@@ -29,6 +29,12 @@ input::-webkit-search-cancel-button {
     display: none;
 }
 
+/* light mode styles */
+.light-mode {
+    background-color: var(--light-bg);
+}
+
+
 /* logo styles */
 .left-logo{
     height: 100px;
